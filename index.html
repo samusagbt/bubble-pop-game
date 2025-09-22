@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bubble Pop - Farcaster Mini App</title>
+
+    <!-- Farcaster Frame Meta Tags -->
+    <meta property="fc:frame" content="vNext">
+    <meta property="fc:frame:image" content="https://your-domain.com/bubble-pop-preview.png">
+    <meta property="fc:frame:button:1" content="Play Game">
+    <meta property="fc:frame:button:1:action" content="link">
+    <meta property="fc:frame:button:1:target" content="https://your-domain.com">
+
+    <!-- PWA Meta Tags -->
+    <meta name="theme-color" content="#4ECDC4">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <!-- Start Screen -->
+        <div id="startScreen" class="screen start-screen">
+            <div class="start-content">
+                <h1 class="game-title">🫧 Bubble Pop</h1>
+                <p class="game-description">Pop bubbles to score points!<br>You have 60 seconds!</p>
+                <div class="bubble-values">
+                    <div class="bubble-value">
+                        <span class="bubble-demo" style="background: #FF6B6B;"></span>
+                        <span>Red = 10pts</span>
+                    </div>
+                    <div class="bubble-value">
+                        <span class="bubble-demo" style="background: #4ECDC4;"></span>
+                        <span>Blue = 15pts</span>
+                    </div>
+                    <div class="bubble-value">
+                        <span class="bubble-demo" style="background: #45B7D1;"></span>
+                        <span>Green = 20pts</span>
+                    </div>
+                    <div class="bubble-value">
+                        <span class="bubble-demo" style="background: #FFD93D;"></span>
+                        <span>Gold = 50pts</span>
+                    </div>
+                </div>
+                <button id="playButton" class="btn btn--primary btn--lg">Play Game</button>
+            </div>
+        </div>
+
+        <!-- Game Screen -->
+        <div id="gameScreen" class="screen game-screen hidden">
+            <div class="game-header">
+                <div class="score-display">
+                    <span class="score-label">Score:</span>
+                    <span id="scoreValue">0</span>
+                </div>
+                <div class="timer-display">
+                    <span class="timer-label">Time:</span>
+                    <span id="timerValue">60</span>
+                </div>
+            </div>
+            <canvas id="gameCanvas"></canvas>
+        </div>
+
+        <!-- End Screen -->
+        <div id="endScreen" class="screen end-screen hidden">
+            <div class="end-content">
+                <h2 class="end-title">🎉 Game Over!</h2>
+                <div class="final-score">
+                    <span class="score-label">Final Score:</span>
+                    <span id="finalScore">0</span>
+                </div>
+                <div id="achievementBadge" class="achievement-badge hidden">
+                    <span id="achievementEmoji"></span>
+                    <span id="achievementTitle"></span>
+                </div>
+                <div class="end-buttons">
+                    <button id="shareButton" class="btn btn--primary btn--lg">📱 Share My Score</button>
+                    <button id="playAgainButton" class="btn btn--secondary">🔄 Play Again</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
