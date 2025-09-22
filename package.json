@@ -1,0 +1,37 @@
+{
+  "name": "bubble-pop-farcaster-miniapp",
+  "version": "1.0.0",
+  "description": "A fun bubble popping game for Farcaster Mini Apps with social sharing",
+  "main": "index.html",
+  "scripts": {
+    "dev": "npx serve .",
+    "build": "echo 'Static files ready for deployment'",
+    "deploy": "gh-pages -d .",
+    "preview": "npx serve . -p 3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/bubble-pop-game.git"
+  },
+  "keywords": [
+    "farcaster",
+    "mini-app",
+    "game",
+    "bubble",
+    "canvas",
+    "mobile",
+    "social",
+    "warpcast",
+    "base"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "homepage": "https://your-username.github.io/bubble-pop-game",
+  "devDependencies": {
+    "gh-pages": "^6.0.0",
+    "serve": "^14.2.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+}
