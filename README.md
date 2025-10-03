@@ -55,7 +55,7 @@ php -S localhost:8000
 
 3. Open `http://localhost:8000` in your browser
 
-## 🚀 Deployment
+### 🚀 Deployment
 
 ### GitHub Pages
 1. Push code to GitHub
