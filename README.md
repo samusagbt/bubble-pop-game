@@ -138,4 +138,4 @@ MIT License - feel free to fork and customize!
 
 ---
 
-Built with ❤️ for the Farcaster community
+Built with ❤️ for the Farcaster communityy
