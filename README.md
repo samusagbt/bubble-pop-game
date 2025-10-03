@@ -136,6 +136,6 @@ MIT License - feel free to fork and customize!
 - Star the repo if you like it!
 - Share your high scores on Farcaster
 
-----
+-----
 
 Built with ❤️ for the Farcaster community
