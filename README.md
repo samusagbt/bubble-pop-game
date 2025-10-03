@@ -118,7 +118,7 @@ shareMessages: [
 - **Firefox** - Full support
 - **Mobile browsers** - Optimized for touch
 
-## 📄 License
+### 📄 License
 
 MIT License - feel free to fork and customize!
 
